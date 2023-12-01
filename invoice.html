@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Invoice</title>
+    <link rel="icon" href="img/newtech-white-icon.svg" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="property.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body bg-body-container">
+
+    <div class="container-fluid">
+
+        <!-- navbar start -->
+        <div class="row">
+            <div class="col-12 navigation-bar bg-body-container d-flex justify-content-center align-items-center">
+                <div class="centert-box">
+                    <div>
+                        <div class="Inter-13-regular color-nav-blue f-left hover-hand" onclick="home();">Home <span class="nav-from-text">/
+                                My Orders / Invoice</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div>
+                                <div class="nav-text Inter-13-regular color-dark-lighBlue f-left hover-hand">Help and Contact</div>
+                                <div class="nav-text Inter-13-regular color-dark-lighBlue f-left hover-hand"onclick="login();">Sign out</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar end -->
+
+        <!-- invoice logo -->
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center icon-box bg-white">
+                <div class="reciept-logo"></div>
+            </div>
+        </div>
+        <!-- invoice logo end -->
+
+        <!-- content body -->
+        <div class="H-center">
+            <div class="centert-box mt-20">
+
+                <!-- task panel -->
+                <div class="customer-task-panel bg-white f-left">
+
+                    <!-- logo -->
+                    <div class="task-panel-logo-bg bottom-innershadow-line">
+                        <div class="task-center-container"><img src="img/taskbar/newtech-green-logo.svg"
+                                class="task-panel-logo" /></div>
+                        <div class="Ubuntu-15-Medium color-black task-center-container">NewTech</div>
+                        <div class="Ubuntu-13-Light color-black task-center-container">Product list you ordered
+                        </div>
+                    </div>
+
+                    <!-- option #1 -->
+                    <div class="task-option-holder mt-20 bg-white V-center hover-hand" onclick="home();">
+                        <div><img src="img/taskbar/home-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">Home</div>
+                    </div>
+
+                    <!-- option #2 -->
+                    <div class="task-option-holder bg-white V-center hover-hand"onclick="watchlist();">
+                        <div><img src="img/taskbar/heart-black.svg" class="task-option-img f-left left-24" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">My Watchlist</div>
+                    </div>
+
+                    <!-- option #3 -->
+                    <div class="task-option-holder bg-white V-center hover-hand"onclick="cart();">
+                        <div><img src="img/taskbar/cart-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">My Cart</div>
+                    </div>
+
+                    <!-- option #4 -->
+                    <div class="task-option-holder bg-task-selector bg-task-selector-border V-center hover-hand"onclick="myOrders();">
+                        <div><img src="img/taskbar/myOrders-lightblue.svg" class="task-option-img f-left left-30" />
+                        </div>
+                        <div class="Maven_Pro-19-semibold color-lightblue left-20">My Orders</div>
+                    </div>
+
+                    <!-- option #5 -->
+                    <div class="task-option-holder bg-white V-center hover-hand"onclick="messages();">
+                        <div><img src="img/taskbar/messages-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">Messages</div>
+                    </div>
+
+                </div>
+                <!-- task panel end -->
+
+
+                <div class="row f-left">
+                    <!-- Ordered-items-invoice -->
+                    <div class="WCO-content-body-no-Product clear">
+
+                        <!-- invoice card -->
+                        <div class="invoice-card bg-white">
+                            <div>
+
+                                <!-- card header -->
+                                <div class="invoice-header bottom-innershadow-line">
+                                    <!-- logo,orderid -->
+                                    <div>
+                                        <div><img src="img/logo-newTech.svg" class="invoice-logo f-left" /></div>
+                                        <div class="order-id-box f-left V-center">
+                                            <div>
+                                                <div class="Ubuntu-18-bold color-black">Order id</div>
+                                                <div class="f-left Inter-15-medium color-card-gray">
+                                                    #<span>8909080567845</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- invoice number and datetime -->
+                                    <div class="d-flex justify-content-end align-items-center h-96">
+                                        <div class="invoice-id-box">
+                                            <div class="Ubuntu-18-bold color-invoiceId-dark-lighblue invoice-id-text-1">
+                                                INVOICE #001</div>
+                                            <div class="Inter-15-regular color-card-gray invoice-id-text-2">
+                                                <span>2023-01-05</span> | <span>09:48:23</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- invoice from-to -->
+                                <div class="H-center mt-30">
+                                    <!-- from -->
+                                    <div>
+                                        <div class="Ubuntu-16-Medium color-card-title-gray">INVOICE FROM</div>
+                                        <div class="invoice-from-to-box f-left boreder-05 mt-10">
+                                            <div class="Ubuntu-22-Medium left-24 mt-12">NewTech</div>
+                                            <div class="Ubuntu-18-Medium left-24 mt-8 color-dark-gray">Matara, Sri Lanka
+                                            </div>
+                                            <div class="Ubuntu-16-Medium color-invoice-dark-lighBlue left-24 mt-10">
+                                                newtech@gmail.com</div>
+                                            <div class="Ubuntu-16-Medium color-black left-24 mt-8">+94 <span>077
+                                                    <span>4815779</span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- to -->
+                                    <div class="left-20">
+                                        <div class="Ubuntu-16-Medium color-card-title-gray">INVOICE TO</div>
+                                        <div class="invoice-from-to-box f-left boreder-05 mt-10">
+                                            <div class="Ubuntu-22-Medium left-24 mt-12">Nethmina Sandaruwan</div>
+                                            <div class="Ubuntu-18-Medium left-24 mt-8 color-dark-gray">Matara, Sri Lanka
+                                            </div>
+                                            <div class="Ubuntu-16-Medium color-invoice-dark-lighBlue left-24 mt-8">
+                                                nethmina@gmail.com</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- invoice from-to end -->
+
+                                <!-- product list -->
+                                <div>
+
+                                    <div class="H-center">
+                                        <!-- list tiles -->
+                                        <div class="invoice-items-titles V-center bottom-innershadow-line">
+                                            <div class="Ubuntu-18-bold color-black f-left IN-title-1">Product</div>
+                                            <div class="Ubuntu-18-bold color-black f-left IN-title-2">Qty</div>
+                                            <div class="Ubuntu-18-bold color-black f-left IN-title-3">Price</div>
+                                            <div class="Ubuntu-18-bold color-black f-left IN-title-4">Amount</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="H-center">
+                                        <!-- list items -->
+                                        <div class="invoice-item-container">
+
+                                            <!-- single item -->
+                                            <!-- item #1 -->
+                                            <div class="single-invoice-item bottom-innershadow-line V-center">
+                                                <div
+                                                    class="single-invoice-item-box-1 Ubuntu-16-Medium color-card-gray f-left">
+                                                    iPhone 12 - 128GB</div><!-- product -->
+                                                <div
+                                                    class="single-invoice-item-box-2 Ubuntu-16-Medium color-card-gray f-left">
+                                                    1</div><!-- qty -->
+                                                <div
+                                                    class="single-invoice-item-box-3 Ubuntu-16-Medium color-card-gray f-left">
+                                                    259,500.00</div><!-- price -->
+                                                <div
+                                                    class="single-invoice-item-box-4 Ubuntu-16-Medium color-card-gray f-left">
+                                                    259,500.00</div><!-- amount -->
+                                            </div>
+                                            <!-- single item end -->
+
+                                            <!-- item #2 -->
+                                            <div class="single-invoice-item bottom-innershadow-line V-center">
+                                                <div
+                                                    class="single-invoice-item-box-1 Ubuntu-16-Medium color-card-gray f-left">
+                                                    JASTER High Speed USB Flas Drive</div><!-- product -->
+                                                <div
+                                                    class="single-invoice-item-box-2 Ubuntu-16-Medium color-card-gray f-left">
+                                                    1</div><!-- qty -->
+                                                <div
+                                                    class="single-invoice-item-box-3 Ubuntu-16-Medium color-card-gray f-left">
+                                                    629.39</div><!-- price -->
+                                                <div
+                                                    class="single-invoice-item-box-4 Ubuntu-16-Medium color-card-gray f-left">
+                                                    629.39</div><!-- amount -->
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- list items end -->
+                                    </div>
+                                </div>
+                                <!-- product list end -->
+
+                                <!-- invoice subtotal, dicounts, deliver fee, total price -->
+                                <div class="invoice-settle-score-box bottom-innershadow-line">
+
+                                    <!-- sub total -->
+                                    <div class="f-left invoice-settle-box-1 V-center">
+                                        <div>
+                                            <div class="Ubuntu-18-bold color-invoice-title-dark-lightblue">Sub total
+                                            </div>
+                                            <div class="Inter-15-medium color-card-gray">LKR <span>260,129.39</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- discounts -->
+                                    <div class="f-left invoice-settle-box-2 V-center">
+                                        <div>
+                                            <div class="Ubuntu-18-bold color-invoice-lighGreen">Discounts</div>
+                                            <div class="Inter-15-medium color-card-gray">LKR <span>000.00</span></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Deliver Fee -->
+                                    <div class="f-left invoice-settle-box-3 V-center">
+                                        <div>
+                                            <div class="Ubuntu-18-bold color-invoice-title-dark-lightblue">Sub total
+                                            </div>
+                                            <div class="Inter-15-medium color-card-gray">LKR <span>2,500.00</span></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- total price -->
+                                    <div class="f-left invoice-settle-box-4 V-center">
+                                        <div>
+                                            <div class="Ubuntu-18-bold color-invoice-title-dark-lightblue">Total Price
+                                            </div>
+                                            <div class="Ubuntu-22-bold color-invoice-total-lightOrange">LKR
+                                                <span>262,629.39</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- invoice subtotal, dicounts, deliver fee, total price end -->
+
+
+                                <!-- buttons and back link -->
+                                <div class="invoice-button-box">
+
+                                    <!-- back link -->
+                                    <div class="invoice-bt-link-txt f-left center">
+                                        <div class="Inter-13-regular color-card-gray"><span class="color-blue">My
+                                                Orders</span> / invoice</div>
+                                    </div>
+
+                                    <!-- buttons -->
+                                    <div class="d-flex justify-content-end">
+                                        <div class="invoice-btn-container center">
+                                            <div class="f-left">
+                                                <button
+                                                    class="Ubuntu-19-bold color-white boreder-5R btn-blacked inovice-print-btn"><img src="img/invoice/print-white.svg" class="print-icon"/> Print</button></div>
+                                            <div class="f-left"><button
+                                                    class="Ubuntu-19-bold color-white boreder-5R btn-savePDF-red-rose invoice-save-btn"><img src="img/invoice/saveAsPDF-white.svg" class="savePDF-icon"/> Save as PDF</button></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- invoice card end -->
+
+
+
+                    </div>
+                    <!-- Ordered-items-invoice end -->
+                </div>
+
+                <!-- content body end -->
+
+            </div>
+
+
+        </div>
+
+
+
+        <script src="bootstrap.bundle.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

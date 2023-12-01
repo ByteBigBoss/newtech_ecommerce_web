@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Manage Users</title>
+    <link rel="icon" href="img/newtech-white-icon.svg" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="property.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body bg-body-container">
+
+    <div class="container-fluid clear">
+
+        <!-- taskbar -->
+        <div class="row">
+
+            <div class="col-2 bg-white taskbar-container f-left clear">
+                <div>
+
+                    <!-- admin profile image -->
+                    <div class="d-flex justify-content-center">
+                        <div class="admin-profile-holder">
+                            <div class="admin-profile-img border-100R"></div>
+                            <div class="Ubuntu-20-bold color-black admin-user-name">Hi, Nethmina</div>
+                        </div>
+                    </div>
+
+                    <div class="move-task-icons">
+                        <!-- dashboard-->
+                        <div class="bg-task-selector bg-task-selector-border2 admin-task-box V-center ">
+                            <div><img src="img/admin/dashboard-lighblue.svg" class="admin-task-icon left-26" />
+                            </div>
+                            <div class="Maven_Pro-19-semibold color-lightblue admin-task-text">Dachboard</div>
+                        </div>
+
+                        <!-- manage users -->
+                        <div class="bg-white admin-task-box V-center">
+                            <div><img src="img/admin/manage-users-black.svg" class="admin-task-icon left-40" />
+                            </div>
+                            <div class="Maven_Pro-19-semibold admin-task-text">Manage Users</div>
+                        </div>
+
+                        <!-- manage product -->
+                        <div class="bg-white admin-task-box V-center">
+                            <div><img src="img/admin/manage-product-black.svg" class="admin-task-icon left-40" />
+                            </div>
+                            <div class="Maven_Pro-19-semibold admin-task-text">Manage Products</div>
+                        </div>
+
+                        <!-- sellings -->
+                        <div class="bg-white admin-task-box V-center">
+                            <div><img src="img/admin/sellings-black.svg" class="admin-task-icon left-40" /></div>
+                            <div class="Maven_Pro-19-semibold admin-task-text">Sellings</div>
+                        </div>
+
+                        <!-- inbox -->
+                        <div class="bg-white admin-task-box V-center">
+                            <div><img src="img/admin/inbox-black.svg" class="admin-task-icon left-40" /></div>
+                            <div class="Maven_Pro-19-semibold admin-task-text">Inbox</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- conten body -->
+            <div class="col-10 f-left">
+
+                <div class="row">
+
+                    <!-- admin-logo -->
+                    <div class="admin-top-logo-bg center bg-white">
+
+                        <!-- Home logo -->
+                        <div class="newTech-logo"></div>
+                        <!-- Home logo end -->
+
+                    </div>
+
+
+
+                    <!-- admin-conten-holder -->
+                    <div class="admin-content-holder">
+                        <div class="row">
+                            <div class="col-10 offset-1 ">
+
+
+                                <!-- page container -->
+                                <div class="row">
+
+                                    <!-- page title -->
+                                    <div class="f-left col-12 bottom-innershadow-line">
+                                        <div>
+                                            <div class="admin-panel-title Ubuntu-35-bold color-dark-lighBlue">Manage
+                                                Users
+                                            </div>
+                                            <div class="Inter-20-regular color-gray admin-panel-subtitle f-left">Take
+                                                action or view all users of New Tech</div>
+                                            <div class="d-flex justify-content-end">
+                                                <button
+                                                    class="MU-header-btn boreder-5R Ubuntu-19-bold color-white btn-lighblue">Sellect
+                                                    All</button>
+                                                <button
+                                                    class="MU-header-btn left-12 boreder-5R Ubuntu-19-bold color-white btn-lightGreen">Send
+                                                    Email</button>
+                                                <button
+                                                    class="MU-header-btn left-12 boreder-5R Ubuntu-19-bold color-white btn-blacked">Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- page container body -->
+                                    <div class="col-12 pcb-box clear bg-black clear">
+
+                                        <!-- usercount,searchbar and sort options -->
+                                        <div class="row clear">
+                                            <div class="col-12 bg-color-gold clear">
+
+                                                <!-- user count -->
+                                                <div class="user-count-box bg-white box-right-think-border f-left">
+                                                    <div class="user-count-box-align">
+                                                        <div class="Ubuntu-25-bold color-lighblue-black">10</div>
+                                                        <div class="Ubuntu-19-bold color-lighblue-black">Users</div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- searchbar -->
+                                                <div class="admin-user-searchbar-box f-left box-right-think-border center bg-white">
+                                                    <div>
+                                                        <i class="admin-search position-absolute"></i>
+                                                        <input type="search" class="admin-user-searchbar Inter-16-regular color-card-gray think-border-Ce2-05-10R bg-task-selector" placeholder="Search Users"/>
+                                                    </div>
+                                                </div>
+
+                                                <!-- sort options -->
+                                                <div class="admin-users-sort-bg f-left bg-white">
+                                                    <div class="">
+                                                        <div class="Ubuntu-18-bold color-black">Sort users by</div>
+                                                    </div>
+
+                                                    <!-- options -->
+                                                    <div>
+
+                                                        <!-- #1 -->
+                                                        <div class="d-flex align-items-center h-22">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">Name</div>
+                                                        </div>
+
+                                                        <!-- #2 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">City</div>
+                                                        </div>
+
+                                                        <!-- #3 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">Date</div>
+                                                        </div>
+
+                                                        <!-- #4 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">User Type</div>
+                                                        </div>
+
+                                                        <!-- #5 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">Male</div>
+                                                        </div>
+
+                                                        <!-- #6 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">Female</div>
+                                                        </div>
+
+                                                        <!-- #7 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">Sellings</div>
+                                                        </div>
+
+                                                        <!-- #8 -->
+                                                        <div class="">
+                                                            <input type="checkbox" class="f-left"/>
+                                                            <div class="f-left">Buyings</div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- options end -->
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- usercount,searchbar and sort options end -->
+
+
+                                        <!-- users container -->
+                                        <div>
+                                            <div>
+
+                                                <!-- user #1 -->
+                                                <!-- single user -->
+                                                <div>
+                                                    <div>
+                                                        <!-- user checkbox -->
+                                                        <div>
+                                                            <div><input type="checkbox" /></div>
+                                                        </div>
+
+                                                        <!-- user details -->
+                                                        <div>
+                                                            <div><img src="img/my_img.JPG"></div>
+
+                                                            <div>
+                                                                <div>Nethmina Sandaruwan</div>
+                                                                <div>Joined on: <span>2023-01-02</span></div>
+                                                            </div>
+
+                                                            <div>
+                                                                <div>nethmina@gmail.com</div>
+                                                                <div>City: <span>Matara</span></div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- user details end -->
+
+                                                        <!-- user type -->
+                                                        <div>
+                                                            <div>Admin</div>
+                                                        </div>
+
+                                                        <!-- user gender -->
+                                                        <div>
+                                                            <div>Male</div>
+                                                        </div>
+
+                                                        <!-- user sellings and buyings counts -->
+                                                        <div>
+                                                            <div>
+                                                                <div>7</div> <!--sellings-->
+                                                                <div>0</div> <!--buyings-->
+                                                            </div>
+
+                                                            <div>
+                                                                <div>Sellings</div>
+                                                                <div>Buyings</div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- user sellings and buyings counts end -->
+
+                                                    </div>
+                                                </div>
+                                                <!-- single user end -->
+                                                <!-- user #1 end -->
+
+
+                                            </div>
+                                            <!-- page container body end -->
+
+
+                                        </div>
+                                        <!-- page container end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <script src="bootstrap.bundle.js"></script>
+            <script src="script.js"></script>
+</body>
+
+</html>

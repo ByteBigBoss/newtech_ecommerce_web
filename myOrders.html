@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My Orders</title>
+    <link rel="icon" href="img/newtech-white-icon.svg" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="property.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body bg-body-container">
+
+    <div class="container-fluid">
+
+        <!-- navbar start -->
+        <div class="row">
+            <div class="col-12 navigation-bar bg-body-container d-flex justify-content-center align-items-center">
+                <div class="centert-box">
+                    <div>
+                        <div class="Inter-13-regular color-nav-blue f-left" onclick="home();">Home <span class="nav-from-text">/
+                                My Orders</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div>
+                                <div class="nav-text Inter-13-regular color-dark-lighBlue f-left hover-hand">Help and Contact</div>
+                                <div class="nav-text Inter-13-regular color-dark-lighBlue f-left hover-hand"onclick="login();">Sign out</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar end -->
+
+        <!-- myOrders logo -->
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center icon-box bg-white">
+                <div class="orders-logo"></div>
+            </div>
+        </div>
+        <!-- myOrders logo end -->
+
+        <!-- content body -->
+        <div class="H-center">
+            <div class="centert-box mt-20">
+
+                <!-- task panel -->
+                <div class="customer-task-panel bg-white f-left">
+
+                    <!-- logo -->
+                    <div class="task-panel-logo-bg bottom-innershadow-line">
+                        <div class="task-center-container"><img src="img/taskbar/newtech-green-logo.svg"
+                                class="task-panel-logo" /></div>
+                        <div class="Ubuntu-15-Medium color-black task-center-container">NewTech</div>
+                        <div class="Ubuntu-13-Light color-black task-center-container">Product list you ordered
+                        </div>
+                    </div>
+
+                    <!-- option #1 -->
+                    <div class="task-option-holder mt-20 bg-white V-center hover-hand" onclick="home();">
+                        <div><img src="img/taskbar/home-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">Home</div>
+                    </div>
+
+                    <!-- option #2 -->
+                    <div class="task-option-holder bg-white V-center hover-hand"onclick="watchlist();">
+                        <div><img src="img/taskbar/heart-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">My Watchlist</div>
+                    </div>
+
+                    <!-- option #3 -->
+                    <div class="task-option-holder bg-white V-center hover-hand"onclick="cart();">
+                        <div><img src="img/taskbar/cart-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">My Cart</div>
+                    </div>
+
+                    <!-- option #4 -->
+                    <div class="task-option-holder bg-task-selector bg-task-selector-border V-center hover-hand"onclick="myOrders();">
+                        <div><img src="img/taskbar/myOrders-lightblue.svg" class="task-option-img f-left left-24" />
+                        </div>
+                        <div class="Maven_Pro-19-semibold color-lightblue left-20">My Orders</div>
+                    </div>
+
+                    <!-- option #5 -->
+                    <div class="task-option-holder bg-white V-center hover-hand"onclick="messages();">
+                        <div><img src="img/taskbar/messages-black.svg" class="task-option-img f-left left-30" /></div>
+                        <div class="Maven_Pro-19-semibold color-black left-20">Messages</div>
+                    </div>
+
+                    <!-- item selector panel -->
+                    <div class="item-slector-card bg-white">
+
+
+                        <div>
+                            <div class="Ubuntu-15-Medium color-shop-countCard-gray left-30 mt-24">Selected Items</div>
+                            <div class="Ubuntu-18-bold color-black left-30 mt-8">Not Selected</div>
+                        </div>
+
+
+                        <div><button
+                                class="color-white Ubuntu-20-bold checkout-btn boreder-5R btn-blacked left-24 mt-62">Remove</button>
+                        </div>
+                        <div><button
+                                class="color-white Ubuntu-20-bold checkout-btn boreder-5R btn-savePDF-blue left-24 mt-14">Save
+                                as PDF</button></div>
+
+                    </div>
+                </div>
+                <!-- task panel end -->
+
+
+
+
+                <!-- myOrders searchbar -->
+                <div class="f-left WCO-searchbar-bg bg-white center">
+                    <div>
+                        <i class="WCO-search-icon"></i>
+                        <input type="search"
+                            class="WCO-searchbar search-input-border-lighblue Ubuntu-16-Regular color-message-gray"
+                            placeholder="Find your ordered items" />
+                    </div>
+                </div>
+                <!-- myOrders searchbar end -->
+
+                <div class="row f-left">
+                    <!-- Ordered-items -->
+                    <div class="WCO-content-body-no-Product clear">
+
+
+                        <!-- order #1 -->
+                        <!-- single seller item in orders -->
+                        <div class="order-recipt-container mt-20">
+                            <div class="cart-seller-bg bg-white-blue">
+                                <div><img src="img/taskbar/seller-blue.svg" class="seller-img f-left" /></div>
+                                <div class="Inter-14-medium color-seller-blue f-left seller-name-text">Nethmina
+                                    Sandaruwan</div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div
+                                        class="Inter-12-regular color-blue single-contact-seller-linkText myOrder-text-1 f-left">
+                                        Contact Seller</div>
+                                </div>
+                            </div>
+
+                            <!-- ordered item -->
+                            <div>
+                                <div class="order-reciept-box-1 bg-white">
+                                    <!-- product img -->
+                                    <div><img src="img/products/iphone-12-purple.jpeg "
+                                            class="ordered-product-img boreder-05 mt-20 left-20 f-left" /></div>
+
+                                    <!-- product name -->
+                                        <div class="f-left mt-30 bottom-innershadow-line myOrders-box1-box-1 left-30">
+                                            <div class="Ubuntu-21-bold color-card-title-gray myOrder-rec-title f-left">
+                                                iPhone 12 - 128GB</div>
+                                            <input type="checkbox" class="cart-order-checkbox f-left left-40" />
+                                        </div>
+                          
+
+                                    <!-- product orderId, orderDate, DeliverDate -->
+                                    <div class="myOrders-box1-box-2 f-left bottom-innershadow-line">
+
+                                        <!-- order id -->
+                                        <div class="f-left">
+                                            <div class="Ubuntu-18-bold color-black">Order id</div>
+                                            <div class="Inter-15-regular color-card-gray myOrder-text-4">#<span>080803456871</span></div> <!-- Order id -->
+                                        </div>
+
+                                        <!-- order date -->
+                                        <div class="f-left myOrders-card-title-1">
+                                            <div class="Ubuntu-18-bold color-black">Order Date</div>
+                                            <div class="Inter-15-regular color-card-gray myOrder-text-2">2023-01-04</div><!-- Order Date -->
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                        <!-- deliver date -->
+                                        <div class="f-left">
+                                            <div class="Ubuntu-18-bold color-black">Deliver Date</div>
+                                            <div class="Inter-15-regular color-card-gray myOrder-text-3">Pending...</div><!-- Deliver Date -->
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                <!-- product price, DeliverFee, Quantity and sold price -->
+                                <div class="order-reciept-box-2 bottom-innershadow-line bg-white V-center">
+
+                                    <!-- price -->
+                                    <div class="f-left">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-5">Price</div>
+                                        <div class="Inter-15-regular color-card-gray myOrder-text-5">LKR <span>259,500.00</span></div>
+                                    </div>
+
+                                    <!-- deliver fee -->
+                                    <div class="f-left">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-6">Deliver Fee</div>
+                                        <div class="Inter-15-regular color-card-gray myOrder-text-6">LKR <span>2,500.00</span></div>
+                                    </div>
+
+                                    <!-- qty -->
+                                    <div class="f-left V-center">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-7 f-left">Quantity</div>
+                                        <div class="Inter-15-regular color-card-gray f-left boreder-05-radius-4 quantity-box-ordered">1</div>
+                                    </div>
+
+                                    <!-- sold price -->
+                                    <div class="f-left">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-8">Sold Price</div>
+                                        <div class="Inter-15-regular color-card-gray myOrder-text-8">LKR <span>262,000.00</span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- buttons -->
+                            <div class="order-reciept-box-3 bg-white center">
+                                <div><button class="Ubuntu-21-bold color-white btn-feedback boreder-5R my-rec-btn-1 f-left">Feedback</button></div>
+                                <div><button class="Ubuntu-21-bold color-white btn-invoice boreder-5R my-rec-btn-2 f-left left-20">Invoice</button></div>
+                                <div><button class="Ubuntu-21-bold color-white btn-blacked boreder-5R my-rec-btn-3 f-left left-20">Confirm Order</button></div>
+                            </div>
+                            <!-- ordered item end -->
+                        </div>
+                        <!-- single seller items in orders end -->
+                        <!-- order #1 end -->
+
+
+
+
+                        <!-- order #2 -->
+                        <!-- single seller item in orders -->
+                        <div class="order-recipt-container mt-20">
+                            <div class="cart-seller-bg bg-white-blue">
+                                <div><img src="img/taskbar/seller-blue.svg" class="seller-img f-left" /></div>
+                                <div class="Inter-14-medium color-seller-blue f-left seller-name-text">Nethmina
+                                    Sandaruwan</div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div
+                                        class="Inter-12-regular color-blue single-contact-seller-linkText myOrder-text-1 f-left">
+                                        Contact Seller</div>
+                                </div>
+                            </div>
+
+                            <!-- ordered item -->
+                            <div>
+                                <div class="order-reciept-box-1 bg-white">
+                                    <!-- product img -->
+                                    <div><img src="img/products/flashdrive.jpeg "
+                                            class="ordered-product-img boreder-05 mt-20 left-20 f-left" /></div>
+
+                                    <!-- product name -->
+                                        <div class="f-left mt-30 bottom-innershadow-line myOrders-box1-box-1 left-30">
+                                            <div class="Ubuntu-21-bold color-card-title-gray myOrder-rec-title f-left">JASTER High Speed USB Flas Drive</div>
+                                            <input type="checkbox" class="cart-order-checkbox f-left left-40" />
+                                        </div>
+                          
+
+                                    <!-- product orderId, orderDate, DeliverDate -->
+                                    <div class="myOrders-box1-box-2 f-left bottom-innershadow-line">
+
+                                        <!-- order id -->
+                                        <div class="f-left">
+                                            <div class="Ubuntu-18-bold color-black">Order id</div>
+                                            <div class="Inter-15-regular color-card-gray myOrder-text-4">#<span>890980567765</span></div> <!-- Order id -->
+                                        </div>
+
+                                        <!-- order date -->
+                                        <div class="f-left myOrders-card-title-1">
+                                            <div class="Ubuntu-18-bold color-black">Order Date</div>
+                                            <div class="Inter-15-regular color-card-gray myOrder-text-2">2023-01-03</div><!-- Order Date -->
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                        <!-- deliver date -->
+                                        <div class="f-left">
+                                            <div class="Ubuntu-18-bold color-black">Deliver Date</div>
+                                            <div class="Inter-15-regular color-card-gray myOrder-text-3">2023-01-06</div><!-- Deliver Date -->
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                <!-- product price, DeliverFee, Quantity and sold price -->
+                                <div class="order-reciept-box-2 bottom-innershadow-line bg-white V-center">
+
+                                    <!-- price -->
+                                    <div class="f-left">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-5">Price</div>
+                                        <div class="Inter-15-regular color-card-gray myOrder-text-5">LKR <span>629.39</span></div>
+                                    </div>
+
+                                    <!-- deliver fee -->
+                                    <div class="f-left">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-6">Deliver Fee</div>
+                                        <div class="Inter-15-regular color-card-gray myOrder-text-6">Free Shipping<span></span></div>
+                                    </div>
+
+                                    <!-- qty -->
+                                    <div class="f-left V-center">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-7 f-left">Quantity</div>
+                                        <div class="Inter-15-regular color-card-gray f-left boreder-05-radius-4 quantity-box-ordered">1</div>
+                                    </div>
+
+                                    <!-- sold price -->
+                                    <div class="f-left">
+                                        <div class="Ubuntu-18-bold color-black myOrder-text-8">Sold Price</div>
+                                        <div class="Inter-15-regular color-card-gray myOrder-text-8">LKR <span>629.39</span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- buttons -->
+                            <div class="order-reciept-box-3 bg-white center">
+                                <div><button class="Ubuntu-21-bold color-white btn-feedback boreder-5R my-rec-btn-1 f-left">Feedback</button></div>
+                                <div><button class="Ubuntu-21-bold color-white btn-invoice boreder-5R my-rec-btn-2 f-left left-20">Invoice</button></div>
+                                <div><button class="Ubuntu-21-bold color-order-confirmed-gray bg-white boreder-05-radius-5 my-rec-btn-3 f-left left-20">Confirm Order</button></div>
+                            </div>
+                            <!-- ordered item end -->
+                        </div>
+                        <!-- single seller items in orders end -->
+                        <!-- order #2 end -->
+
+
+
+
+                    </div>
+                    <!-- Ordered-items end -->
+                </div>
+
+                <!-- content body end -->
+
+            </div>
+
+
+        </div>
+
+
+
+        <script src="bootstrap.bundle.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
